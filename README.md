@@ -18,27 +18,30 @@ Each section represents **real working code**, written and understood during a s
 
 ## 🗂️ Repository Structure
 
+```
 ai-llm-playground/
-├── day01_llm_basics/
-│ ├── run_llm.py
-│ ├── README.md
-│
-├── day02_embeddings/
-│ ├── embeddings_demo.py
-│ ├── README.md
-│
-├── day03_semantic_search/
-│ ├── semantic_search.py
-│ ├── README.md
-│
 ├── README.md
-
-
+├── .gitignore
+├── day01_llm_basics/
+│   ├── README.md
+│   └── run_llm.py
+├── day02_embeddings/
+│   ├── README.md
+│   └── embeddings_demo.py
+├── day03_semantic_search/
+│   ├── README.md
+│   └── semantic_search.py
+```
 
 Each folder contains:
-- A focused Python implementation
-- A dedicated README explaining the objective, approach, and learning outcome
 
+- A focused Python implementation
+- A dedicated README explaining:
+  - Objective
+  - Core concept
+  - Implementation approach
+  - Learning outcome
+    
 ---
 
 ## 📘 What Has Been Implemented So Far
