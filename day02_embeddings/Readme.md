@@ -16,7 +16,7 @@ To understand how AI represents text meaning using embeddings and how semantic s
 - Embeddings are numerical representations of text meaning
 - Semantically similar sentences produce similar vectors
 - Cosine similarity measures how close meanings are
-- Embeddings are used in search, recommendations, and RAG systems
+- Embeddings are used in search, recommendations, and RAG systems.
 
 ---
 
