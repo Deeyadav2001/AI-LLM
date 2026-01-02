@@ -31,6 +31,9 @@ ai-llm-playground/
 ├── day03_semantic_search/
 │   ├── README.md
 │   └── semantic_search.py
+├── day04_vector_db/
+│   ├── README.md
+│   └── faiss_demo.py
 ```
 
 Each folder contains:
@@ -91,11 +94,27 @@ Each folder contains:
 - Ranking by relevance is a core component of RAG pipelines
 
 ---
+### ✅ Day 04 – Vector Databases (FAISS)
+**Focus:** Scalable vector-based retrieval  
+
+- Generated embeddings for text documents
+- Built a FAISS vector index to store embeddings
+- Performed fast nearest-neighbor search using FAISS
+- Retrieved relevant documents based on semantic similarity
+- Compared FAISS-based retrieval with manual similarity search
+
+**Key Learning:**
+- Vector databases store embeddings, not raw text
+- FAISS enables fast and scalable similarity search
+- Indexing is critical for large-scale AI systems
+- FAISS is a core retrieval component in RAG pipelines
+
+---
 
 ## 🧠 Conceptual Flow (Big Picture)
 
-Text → Embeddings → Similarity → Ranking → (Later) Generation
-
+ Earliar --> Text → Embeddings → Similarity → Ranking → (Later) Generation
+ Updated --> Text → Tokens → Embeddings → Vector Index (FAISS) → Nearest Vectors → Relevant Context → (Later) LLM Generation
 
 This is the same fundamental pipeline used in:
 - ChatGPT-style systems
@@ -112,7 +131,7 @@ This is the same fundamental pipeline used in:
 - PyTorch (CPU & GPU)
 - CUDA
 - scikit-learn
-
+-FAISS (Facebook AI Similiarity Search)
 ---
 
 ## 📌 Why This Repository Exists
@@ -129,9 +148,8 @@ This approach reflects **real AI engineering practice**, where understanding mat
 ---
 
 ## 🚀 What’s Coming Next
-- Vector databases (FAISS)
 - Retrieval-Augmented Generation (RAG)
-- Combining search + LLMs
+- Integrating FAISS retrieval with LLMs
 - AI agents and tool usage
 - API-based deployment practices
 
