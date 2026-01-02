@@ -131,7 +131,7 @@ This is the same fundamental pipeline used in:
 - PyTorch (CPU & GPU)
 - CUDA
 - scikit-learn
--FAISS (Facebook AI Similiarity Search)
+- FAISS (Facebook AI Similiarity Search)
 ---
 
 ## 📌 Why This Repository Exists
