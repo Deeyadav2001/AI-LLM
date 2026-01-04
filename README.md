@@ -101,6 +101,9 @@ Semantic search retrieves information by meaning, not exact words.
 ### ✅ Day 04 – Vector Databases (FAISS)
 **Focus:** Scalable vector-based retrieval  
 
+ Earliar --> Text → Embeddings → Similarity → Ranking → (Later) Generation
+ Updated --> Text → Tokens → Embeddings → Vector Index (FAISS) → Nearest Vectors → Relevant Context → (Later) LLM Generation
+
 - Generated embeddings for text documents
 - Built a FAISS vector index to store embeddings
 - Performed fast nearest-neighbor search using FAISS
@@ -112,26 +115,6 @@ Semantic search retrieves information by meaning, not exact words.
 - FAISS enables fast and scalable similarity search
 - Indexing is critical for large-scale AI systems
 - FAISS is a core retrieval component in RAG pipelines
-
----
-
-### ✅ Day 04 – Vector Databases (FAISS)
-**Focus:** Scalable and efficient retrieval  
-
- Earliar --> Text → Embeddings → Similarity → Ranking → (Later) Generation
- Updated --> Text → Tokens → Embeddings → Vector Index (FAISS) → Nearest Vectors → Relevant Context → (Later) LLM Generation
-
-This is the same fundamental pipeline used in:
-- ChatGPT-style systems
-- Document Q&A tools
-- Recommendation engines
-- Enterprise AI search platforms
-- Implemented FAISS for vector indexing
-- Replaced brute-force similarity search
-- Learned how vector databases enable fast retrieval at scale
-
-**Key Takeaway:**  
-Vector databases are critical infrastructure for RAG systems.
 
 ---
 
