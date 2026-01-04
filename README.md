@@ -101,8 +101,8 @@ Semantic search retrieves information by meaning, not exact words.
 ### ✅ Day 04 – Vector Databases (FAISS)
 **Focus:** Scalable vector-based retrieval  
 
- Earliar --> Text → Embeddings → Similarity → Ranking → (Later) Generation
- Updated --> Text → Tokens → Embeddings → Vector Index (FAISS) → Nearest Vectors → Relevant Context → (Later) LLM Generation
+- Earliar --> Text → Embeddings → Similarity → Ranking → (Later) Generation
+- Updated --> Text → Tokens → Embeddings → Vector Index (FAISS) → Nearest Vectors → Relevant Context → (Later) LLM Generation
 
 - Generated embeddings for text documents
 - Built a FAISS vector index to store embeddings
