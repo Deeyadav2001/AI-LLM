@@ -29,12 +29,9 @@ ai-llm-playground/
 ├── day04_vector_db/
 │   ├── README.md
 │   └── faiss_demo.py
-```
-=======
 ├── day04_vector_db/
 ├── day05_rag_pdf/
 
->>>>>>> b246c81 (Update main README and Day 4 documentation)
 
 Each folder contains:
 - Python source code
