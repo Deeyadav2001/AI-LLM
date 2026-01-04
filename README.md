@@ -22,17 +22,31 @@ Each folder represents **working, executable code** developed as part of a struc
 
 ai-llm-playground/
 |-- README.md
+|
 |-- .gitignore
+|
 |-- day01_llm_basics/
+|   |-- README.md
+│   |-- run_llm.py
+|
 |-- day02_embeddings/
+|   |-- README.md
+|   |-- embeddings_demo.py
+|
 |-- day03_semantic_search/
 │   |-- README.md
 │   |-- semantic_search.py
+|
 |-- day04_vector_db/
 │   |-- README.md
 │   |-- faiss_demo.py
-|-- day04_vector_db/
+|
 |-- day05_rag_pdf/
+|   |-- README.md
+│   |-- load_pdf.py
+│   |-- chunk_text.py
+│   |-- embedded_chunks.py
+│   |-- rag_retrieval.py
 
 ```
 
