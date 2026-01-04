@@ -1,33 +1,28 @@
 # AI LLM Learning Journey 🚀
 
-This repository documents my **hands-on learning journey in Artificial Intelligence**, focusing on **Large Language Models (LLMs)** and the core systems that power modern AI applications such as **semantic search, embeddings, and retrieval-based AI systems**.
+This repository documents my **hands-on journey in Artificial Intelligence**, focused on **Large Language Models (LLMs)** and the core systems that power modern AI applications such as **embeddings, semantic search, vector databases, and Retrieval-Augmented Generation (RAG)**.
 
-The goal of this project is to **build strong fundamentals by implementing concepts step by step**, not just using APIs blindly.  
-Each section represents **real working code**, written and understood during a structured learning process.
+The purpose of this project is to **build AI systems from scratch with deep understanding**, instead of relying on black-box APIs.  
+Each folder represents **working, executable code** developed as part of a structured learning plan.
 
 ---
 
-## 🎯 Learning Goals
+## 🎯 Learning Objectives
 - Understand how Large Language Models generate text
-- Learn how AI represents text meaning using embeddings
-- Build semantic search systems based on vector similarity
-- Gain practical experience with CPU vs GPU execution
-- Create a strong foundation for RAG and AI agents
+- Learn how text meaning is represented using embeddings
+- Build semantic search systems using vector similarity
+- Implement scalable retrieval using vector databases
+- Build document-grounded AI systems using RAG
 
 ---
 
 ## 🗂️ Repository Structure
 
-```
 ai-llm-playground/
 ├── README.md
 ├── .gitignore
 ├── day01_llm_basics/
-│   ├── README.md
-│   └── run_llm.py
 ├── day02_embeddings/
-│   ├── README.md
-│   └── embeddings_demo.py
 ├── day03_semantic_search/
 │   ├── README.md
 │   └── semantic_search.py
@@ -35,63 +30,58 @@ ai-llm-playground/
 │   ├── README.md
 │   └── faiss_demo.py
 ```
+=======
+├── day04_vector_db/
+├── day05_rag_pdf/
+
+>>>>>>> b246c81 (Update main README and Day 4 documentation)
 
 Each folder contains:
-
-- A focused Python implementation
+- Python source code
 - A dedicated README explaining:
   - Objective
-  - Core concept
   - Implementation approach
-  - Learning outcome
-    
+  - Key concepts learned
+  - Outcome
+
 ---
 
-## 📘 What Has Been Implemented So Far
+## 📘 Progress So Far
 
-### ✅ Day 01 – Large Language Model Basics
-**Focus:** Text generation using a pretrained LLM  
+### ✅ Day 01 – LLM Basics
+**Focus:** Understanding how LLMs generate text  
 
-- Ran a pretrained GPT-2 model locally
-- Understood how LLMs generate text token by token
-- Controlled execution on CPU vs GPU using PyTorch
-- Verified GPU usage using CUDA and `nvidia-smi`
+- Ran a pretrained LLM locally
+- Learned token-based text generation
+- Compared CPU vs GPU execution
+- Verified GPU usage with CUDA
 
-**Key Learning:**
-- LLMs predict the next token based on probability
-- Tokens are not the same as words
-- GPU improves speed, not intelligence
-- Environment setup is critical in AI projects
+**Key Takeaway:**  
+LLMs predict the next token probabilistically; GPUs improve speed, not intelligence.
 
 ---
 
 ### ✅ Day 02 – Embeddings & Semantic Similarity
-**Focus:** Understanding text meaning numerically  
+**Focus:** Representing text meaning numerically  
 
-- Generated sentence embeddings using a pretrained embedding model
+- Generated sentence embeddings
 - Compared sentences using cosine similarity
-- Verified that semantically similar sentences score higher
+- Verified semantic similarity through vector distance
 
-**Key Learning:**
-- Embeddings are numerical representations of meaning
-- Similar meaning → similar vectors
-- Cosine similarity measures semantic closeness
-- Embeddings are foundational for search, RAG, and recommendations
+**Key Takeaway:**  
+Embeddings capture meaning and are the foundation of modern AI systems.
 
 ---
 
 ### ✅ Day 03 – Semantic Search
 **Focus:** Meaning-based document retrieval  
 
-- Built a simple semantic search system
-- Converted documents and user queries into embeddings
-- Ranked documents based on semantic similarity
-- Demonstrated difference between keyword search and semantic search
+- Built a semantic search system
+- Ranked documents using embedding similarity
+- Compared keyword search vs semantic search
 
-**Key Learning:**
-- Semantic search retrieves results by meaning, not keywords
-- Vector similarity enables modern AI search systems
-- Ranking by relevance is a core component of RAG pipelines
+**Key Takeaway:**  
+Semantic search retrieves information by meaning, not exact words.
 
 ---
 ### ✅ Day 04 – Vector Databases (FAISS)
@@ -111,7 +101,8 @@ Each folder contains:
 
 ---
 
-## 🧠 Conceptual Flow (Big Picture)
+### ✅ Day 04 – Vector Databases (FAISS)
+**Focus:** Scalable and efficient retrieval  
 
  Earliar --> Text → Embeddings → Similarity → Ranking → (Later) Generation
  Updated --> Text → Tokens → Embeddings → Vector Index (FAISS) → Nearest Vectors → Relevant Context → (Later) LLM Generation
@@ -121,41 +112,85 @@ This is the same fundamental pipeline used in:
 - Document Q&A tools
 - Recommendation engines
 - Enterprise AI search platforms
+=======
+- Implemented FAISS for vector indexing
+- Replaced brute-force similarity search
+- Learned how vector databases enable fast retrieval at scale
+
+**Key Takeaway:**  
+Vector databases are critical infrastructure for RAG systems.
+>>>>>>> b246c81 (Update main README and Day 4 documentation)
 
 ---
 
-## ⚙️ Technologies & Tools Used
-- Python 3.11
+### ✅ Day 05 – PDF-based Retrieval-Augmented Generation (RAG)
+**Focus:** Document-grounded question answering  
+
+- Extracted text from a real subject PDF
+- Chunked content for semantic retrieval
+- Generated embeddings and stored them in FAISS
+- Retrieved relevant content for user queries
+- Generated accurate answers using an instruction-tuned local LLM
+
+**Key Takeaway:**  
+RAG combines retrieval and generation to reduce hallucinations and improve answer reliability.
+
+---
+
+## 🧠 System Architecture (High Level)
+
+PDF → Text → Chunking → Embeddings → FAISS → Retrieval → LLM → Answer
+
+
+
+This pipeline reflects how:
+- Enterprise AI assistants
+- Document Q&A systems
+- ChatGPT-with-your-data solutions work internally
+
+---
+
+## ⚙️ Technologies Used
+- Python
 - Hugging Face Transformers
 - sentence-transformers
-- PyTorch (CPU & GPU)
+- FAISS
+- PyTorch
 - CUDA
 - scikit-learn
 - FAISS (Facebook AI Similiarity Search)
+=======
+
+>>>>>>> b246c81 (Update main README and Day 4 documentation)
 ---
 
 ## 📌 Why This Repository Exists
-This repository is intentionally designed as a **learning journey**, not a polished product.
+This repository is intentionally built as a **learning-first engineering project**.
 
 It demonstrates:
-- Conceptual understanding
-- Hands-on implementation
-- Progressive skill development
-- Ability to explain and reason about AI systems
-
-This approach reflects **real AI engineering practice**, where understanding matters more than copying code.
+- Strong fundamentals
+- System-level thinking
+- Progressive AI skill development
+- Ability to reason about how AI systems work internally
 
 ---
+
 
 ## 🚀 What’s Coming Next
 - Retrieval-Augmented Generation (RAG)
 - Integrating FAISS retrieval with LLMs
 - AI agents and tool usage
 - API-based deployment practices
+=======
+## 🚀 What’s Next
+- Improve RAG answer quality
+- Add evaluation and tuning
+- Build conversational RAG with memory
+- Introduce AI agents and tool usage
+- Prepare production-ready APIs
+>>>>>>> b246c81 (Update main README and Day 4 documentation)
 
 ---
 
-## 🧾 One-Line Summary
-> A structured, hands-on journey building foundational AI systems using LLMs, embeddings, and semantic search.
-
----
+## 🧾 Summary
+> Building modern AI systems from the ground up — from LLM basics to Retrieval-Augmented Generation.
