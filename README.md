@@ -109,14 +109,12 @@ This is the same fundamental pipeline used in:
 - Document Q&A tools
 - Recommendation engines
 - Enterprise AI search platforms
-=======
 - Implemented FAISS for vector indexing
 - Replaced brute-force similarity search
 - Learned how vector databases enable fast retrieval at scale
 
 **Key Takeaway:**  
 Vector databases are critical infrastructure for RAG systems.
->>>>>>> b246c81 (Update main README and Day 4 documentation)
 
 ---
 
@@ -156,9 +154,7 @@ This pipeline reflects how:
 - CUDA
 - scikit-learn
 - FAISS (Facebook AI Similiarity Search)
-=======
-
->>>>>>> b246c81 (Update main README and Day 4 documentation)
+  
 ---
 
 ## 📌 Why This Repository Exists
@@ -172,20 +168,12 @@ It demonstrates:
 
 ---
 
-
-## 🚀 What’s Coming Next
-- Retrieval-Augmented Generation (RAG)
-- Integrating FAISS retrieval with LLMs
-- AI agents and tool usage
-- API-based deployment practices
-=======
 ## 🚀 What’s Next
 - Improve RAG answer quality
 - Add evaluation and tuning
 - Build conversational RAG with memory
 - Introduce AI agents and tool usage
 - Prepare production-ready APIs
->>>>>>> b246c81 (Update main README and Day 4 documentation)
 
 ---
 
