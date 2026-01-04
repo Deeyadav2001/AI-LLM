@@ -18,20 +18,23 @@ Each folder represents **working, executable code** developed as part of a struc
 
 ## 🗂️ Repository Structure
 
-ai-llm-playground/
-├── README.md
-├── .gitignore
-├── day01_llm_basics/
-├── day02_embeddings/
-├── day03_semantic_search/
-│   ├── README.md
-│   └── semantic_search.py
-├── day04_vector_db/
-│   ├── README.md
-│   └── faiss_demo.py
-├── day04_vector_db/
-├── day05_rag_pdf/
+```
 
+ai-llm-playground/
+|-- README.md
+|-- .gitignore
+|-- day01_llm_basics/
+|-- day02_embeddings/
+|-- day03_semantic_search/
+│   |-- README.md
+│   |-- semantic_search.py
+|-- day04_vector_db/
+│   |-- README.md
+│   |-- faiss_demo.py
+|-- day04_vector_db/
+|-- day05_rag_pdf/
+
+```
 
 Each folder contains:
 - Python source code
